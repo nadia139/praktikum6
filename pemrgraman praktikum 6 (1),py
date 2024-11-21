@@ -1,0 +1,34 @@
+kontak = {
+  "nadia": "083183266926",
+  "kevin": "087815646769"
+}
+print("Kontak nadia:", kontak["nadia"])
+
+kontak["ado"] = "082127150958"
+kontak["kevin"] = "087815646769"
+
+print("Semua Nama:")
+for nama in kontak:
+  print(nama)
+
+print("Semua Nomor:")
+for nomor in kontak.values():
+  print(nomor)
+
+print("Daftar Nama dan Nomornya:")
+for nama, nomor in kontak.items():
+  print(nama + ": " + nomor)
+
+del kontak["kevin"]
+
+print("Semua Nama:")
+for nama in kontak:
+  print(nama)
+
+print("Semua Nomor:")
+for nomor in kontak.values():
+  print(nomor)
+
+print("Daftar Nama dan Nomornya:")
+for nama, nomor in kontak.items():
+     print(nama + ":"+ nomor)
